@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
 
-const dataSchema = new mongoose.Schema({
-  name: {
+const randomNumberSchema = new mongoose.Schema({
+  userName: {
     required: true,
     type: String,
   },
-  age: {
+  randomNumber: {
     required: true,
     type: Number,
   },
 });
 
-module.exports = mongoose.model("Data", dataSchema);
+module.exports = mongoose.model("RandomNumberData", randomNumberSchema);
